@@ -23,20 +23,21 @@
   const searchParams = new URL(window.location.href).searchParams;
 
 eyeZon("init",{
-      businessId:"5",
-      region:"prod",
-      logging: true
+	businessId:"5",
+	region:"prod",
+	logging: true
+	updateRoutingAfterSeconds: 30,        
+	resetRoutingAfterSeconds: 60
 })</script>
 
 
  <button class="btn"          
  	data-eyezon="88"
-	data-eyezon-title="Ми-ми-ми" >Посмотреть милоту
-	data-eyezon-target="Милота"
-	updateRoutingAfterSeconds: 30        
-	resetRoutingAfterSeconds: 60
+	
 	data-eyezon-streamer-ids='["999"]'
-        data-eyezon-shop-ids='["London", "Paris"]'	
+        data-eyezon-shop-ids='["London", "Paris"]'
+	data-eyezon-target="Милота"
+	data-eyezon-title="Ми-ми-ми" >Посмотреть милоту	
  </button>
 
  <style>
