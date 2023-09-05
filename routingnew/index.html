@@ -1,6 +1,6 @@
 <html lang="ru">
  <head>
-  <title>Wow me new widget</title>
+  <title>Routing</title>
  </head>
 
 <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet'>
@@ -9,7 +9,7 @@
 
 <script>
 
-  (function(w, d, s, o, f, js, fjs) {
+ (function(w, d, s, o, f, js, fjs) {
     w[o] = w[o] || function() {
       (w[o].q = w[o].q || []).push(arguments);
     };
@@ -30,9 +30,13 @@ eyeZon("init",{
 
 
  <button class="btn"          
- 	data-eyezon="62"
-	data-eyezon-target="SKU-Прелесть"
- 	data-eyezon-title="Прелесть" >Посмотреть красивое
+ 	data-eyezon="88"
+	data-eyezon-title="Ми-ми-ми" >Посмотреть милоту
+	data-eyezon-target="Милота"
+	updateRoutingAfterSeconds: 30        
+	resetRoutingAfterSeconds: 60
+	data-eyezon-streamer-ids='["999"]'
+        data-eyezon-shop-ids='["London", "Paris"]'	
  </button>
 
  <style>
