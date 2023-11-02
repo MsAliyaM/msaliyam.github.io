@@ -1,0 +1,66 @@
+<html lang="ru">
+ <head>
+  <title>Wow me sandbox</title>
+ </head>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet'>
+
+ <body>
+
+<script>
+
+  (function(w, d, s, o, f, js, fjs) {
+    w[o] = w[o] || function() {
+      (w[o].q = w[o].q || []).push(arguments);
+    };
+    js = d.createElement(s);
+    fjs = d.getElementsByTagName(s)[0];
+    js.id  = o;
+    js.src = f;
+    js.async = true;
+    fjs.parentNode.insertBefore(js, fjs);
+  }(window, document, "script", "eyeZon", "https://storage.googleapis.com/eyezonwidgetv2/static/js/eyezonwidget.js"));
+  const searchParams = new URL(window.location.href).searchParams;
+
+eyeZon("init",{
+      businessId:"23",
+      region:"sandbox",
+      logging: true
+})</script>
+
+
+ <button class="btn"          
+ 	data-eyezon="250"
+	data-eyezon-target="SKU-Unicorn"
+ 	data-eyezon-title="Unicorn" >Посмотреть магию
+ </button>
+
+ <style>
+   .btn 
+   {
+   box-sizing: border-box;
+
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 220px;
+   height: 40px;
+
+   border: 0.5px solid #000000;
+   border-radius: 46px;
+
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.0025em;
+   text-transform: lowercase;
+   color: #000000;
+
+   }
+  </style>
+
+ </body>
+</html>
