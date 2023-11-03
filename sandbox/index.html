@@ -19,14 +19,18 @@
     js.src = f;
     js.async = true;
     fjs.parentNode.insertBefore(js, fjs);
-  }(window, document, "script", "eyeZon", "https://storage.googleapis.com/eyezonfortest/widget_2.0/static/js/eyezonwidget-test.js"));
+  }(window, document, "script", "eyeZon", "https://storage.googleapis.com/eyezonfortest/widget_2.0/static/js/eyezonwidget-dev.js"));
 
   eyeZon("init", {
     businessId: "23",
     region: "sandbox",
     language: "ru",
     logging: true
-  })
+  });
+
+    eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
+       
+    })
 
 </script>
 
@@ -34,6 +38,7 @@
  <button class="btn"          
  	data-eyezon="250"
 	data-eyezon-target="SKU-Unicorn"
+	data-eyezon-put-in-cart="true"
  	data-eyezon-title="Unicorn" >увидеть вживую
  </button>
 
