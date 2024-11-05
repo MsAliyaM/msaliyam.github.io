@@ -20,7 +20,6 @@
     js.async = true;
     fjs.parentNode.insertBefore(js, fjs);
   }(window, document, "script", "eyeZon", "https://storage.googleapis.com/eyezonwidgetv2/static/js/eyezonwidget.js"));
-  const searchParams = new URL(window.location.href).searchParams;
 
 eyeZon("init",{
       businessId:"5",
@@ -28,7 +27,7 @@ eyeZon("init",{
       logging: true
 });
 
-    eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
+    eyeZon('on', 'PUT_IN_CART_REQUEST_ACCEPTED', function(data) {
        
     })
 
